@@ -1,0 +1,422 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #ddd;
+    color: white;
+}
+
+.fa-list-ul {
+    display: none;
+}
+
+/* start header*/
+header {
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    position: fixed;
+    padding: 20px 0px;
+    z-index: 555;
+}
+
+.contener {
+    width: 80%;
+    margin: auto;
+}
+
+header .contener {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 30px;
+}
+
+header .list ul {
+    list-style: none;
+}
+
+header .list ul li {
+    float: left;
+    margin-left: 20px;
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* End Header */
+
+/* Start sec */
+.sec .contener {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec .contener .details {
+    width: 80%;
+}
+
+.sec .contener .title {
+    width: 80%;
+}
+
+.sec .contener .title p {
+    direction: rtl;
+    padding-right: 50px;
+}
+
+.sec .contener .title p:first-child {
+    font-size: 30px;
+}
+
+/* End sec */
+
+/* Start cover */
+.cover {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/cover.jpg');
+    background-size: cover;
+
+}
+
+.cover .contener {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    top: 50%;
+
+}
+
+.cover .info {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+}
+
+.cover .info .name {
+    font-size: 50px;
+    color: rgb(8, 8, 8);
+    font-weight: bold;
+}
+
+.cover .info p:nth-child(2) {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    padding: 30px 0px;
+    border-bottom: 1px solid rgb(2, 2, 2);
+}
+
+.cover .info ul {
+    list-style: none;
+}
+
+.cover .info ul li {
+    float: left;
+    margin-left: 40px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    padding: 10px 0px;
+}
+
+/* End Cover */
+
+/* Start Intro */
+.intro {
+    width: 100%;
+    background-color: white;
+    margin-top: 80px;
+}
+
+.intro .contener {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.intro .contener .title {
+    width: 27%;
+}
+
+.intro .contener .details {
+    width: 80%;
+}
+
+.intro .contener .details p:first-child {
+    margin-bottom: 20px;
+}
+
+.intro .contener .title p {
+    direction: rtl;
+}
+
+.skills {
+    margin-top: 50px;
+}
+
+.skills .skill {
+    margin-bottom: 20px;
+}
+
+.skills .skill p:first-child span:last-child {
+    float: right;
+}
+
+.skills .skill .color {
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.skills .skill .html {
+    background-image: linear-gradient(to right, red 70%, gray 30%);
+}
+
+.skills .skill .js {
+    background-image: linear-gradient(to right, red 50%, gray 50%);
+}
+
+.skills .skill .css {
+    background-image: linear-gradient(to right, red 60%, gray 40%);
+}
+
+/* End Intro */
+
+/* Start Exp */
+.exp {
+    width: 100%;
+    background-color: #ddd;
+    padding: 50px 0px;
+    margin-top: 80px;
+}
+
+.exp .contener {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.exp .contener .title {
+    grid-column: span 3;
+}
+
+.exp .contener .tools {
+    grid-column: span 9;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+.exp .contener .tools .tool {
+    grid-column: span 4;
+    background-color: white;
+    color: black;
+    padding: 20px 20px;
+}
+
+.exp .contener .tools .tool p {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+/* End Exp */
+
+/* Start Work */
+.works {
+    margin-top: 80px;
+    width: 100%;
+    background-color: white;
+}
+
+.works .contener {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.works .contener .title {
+    grid-column: span 3;
+}
+
+.works .contener .image {
+    grid-column: span 9;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+}
+
+.works .contener .image .work:first-child {
+    grid-column: span 8;
+}
+
+.works .contener .image .work:nth-child(2),
+.works .contener .image .work:nth-child(3),
+.works .contener .image .work:nth-child(4),
+.works .contener .image .work:nth-child(5) {
+    grid-column: span 4;
+}
+
+.works .contener .image .work img {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* End Work */
+
+/* Start Contact */
+.contact {
+    margin-top: 80px;
+    width: 100%;
+    background-color: #ddd;
+    height: 100px;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact .contener {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.contact .contener .title {
+    grid-column: span 3;
+    font-size: 20px;
+    color: black;
+}
+
+.contact .contener .details {
+    grid-column: span 9;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+}
+
+.contact .contener .details div {
+    grid-column: span 3;
+    color: black;
+    font-size: 15px;
+}
+
+/* End Contact */
+
+/* Start Footer */
+footer {
+    width: 100%;
+    background-color: white;
+    padding: 30px 0px;
+}
+
+footer .contener {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* End Footer */
+
+
+
+/* Start Media Phone */
+@media (max-width: 767px) {
+    .sec .contener {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .exp .contener .details div {
+        grid-column: span 12;
+    }
+
+    .sec .contener .title {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .sec .contener .title p {
+        padding-right: 0;
+    }
+
+    .sec .contener .details {
+        width: 100%;
+    }
+
+    .exp .contener .details {
+        text-align: center;
+    }
+
+    .contact .contener .details div {
+        margin-bottom: 30px;
+    }
+
+    .exp .contener .tools .tool {
+        flex-direction: column;
+    }
+
+    .contact .contener .title {
+        font-size: 16px;
+    }
+
+    .contact {
+        height: fit-content;
+    }
+
+    .contact .contener .details {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .exp .contener .tools {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .list {
+        display: none;
+        position: absolute;
+        top: 68px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        color: black;
+    }
+
+    header .list ul li {
+        float: none;
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    header .list ul li:hover {
+        color: white;
+        background-color: blue;
+    }
+
+    .fa-list-ul {
+        display: block;
+    }
+
+    .fa-list-ul:hover+.list {
+        display: block;
+    }
+
+    .list::after {
+        content: "";
+        position: absolute;
+        top: -48px;
+        right: 5%;
+        border-style: solid;
+        border-width: 25px;
+        border-color: transparent transparent white transparent;
+    }
+}
+
+/* End Media Phone */
